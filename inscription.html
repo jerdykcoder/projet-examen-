@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>INSCRIPTION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">ACCUEIL</a>
+    <a href="inscription.html">INSCRIPTION</a>
+    <a href="etudiants.html">LISTE DES ETUDIANTS</a>
+    <a href="contact.html">CONTACT</a>
+</nav>
+
+<div class="container">
+    <h1>INSCRIPTION ETUDIANTS</h1>
+
+    <form>
+
+        <!-- NOM -->
+        <div>
+            <label for="nom">NOM</label>
+            <input type="text" id="nom" required>
+        </div>
+
+        <!-- PRENOM -->
+        <div>
+            <label for="prenom">PRENOM</label>
+            <input type="text" id="prenom" required>
+        </div>
+
+        <!-- DATE -->
+        <div>
+            <label for="date">DATE DE NAISSANCE</label>
+            <input type="date" id="date">
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email">
+        </div>
+
+        <!-- TELEPHONE -->
+        <div>
+            <label for="tel">TELEPHONE</label>
+            <input type="tel" id="tel">
+        </div>
+
+        <!-- SEXE -->
+        <div>
+            <label>SEXE</label>
+            <div class="radio-group">
+                <input type="radio" name="sexe" value="homme"> Homme
+                <input type="radio" name="sexe" value="femme"> Femme
+            </div>
+        </div>
+
+        <!-- FILIERE -->
+        <div>
+            <label>FILIERE</label>
+            <select>
+                <option>Ingenieur des procedes</option>
+                <option>Genie logiciel</option>
+                <option>Reseaux informatique</option>
+            </select>
+        </div>
+
+        <!-- NIVEAU -->
+        <div>
+            <label>NIVEAU</label>
+            <select>
+                <option>L1</option>
+                <option>L2</option>
+                <option>L3</option>
+                <option>MASTER</option>
+            </select>
+        </div>
+
+        <!-- MATIERES -->
+        <div class="full">
+            <label>MATIERES</label>
+            <div class="checkbox-group">
+                <input type="checkbox"> Procedes
+                <input type="checkbox"> Programmation
+                <input type="checkbox"> Reseaux
+            </div>
+        </div>
+
+        <!-- PHOTO -->
+        <div class="full">
+            <label>PHOTO</label>
+            <input type="file">
+        </div>
+
+        <!-- BOUTON -->
+        <div class="full">
+            <button type="submit">ENVOYER</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
